@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormUtilisateur</class>
+ <widget class="QMainWindow" name="FormUtilisateur">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1261</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>551</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Quicksand</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Formulaire utilisateur</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>51</y>
+       <width>37</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nom</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtnom">
+     <property name="geometry">
+      <rect>
+       <x>209</x>
+       <y>51</y>
+       <width>201</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>116</x>
+       <y>120</y>
+       <width>71</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Prenom</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtprenom">
+     <property name="geometry">
+      <rect>
+       <x>209</x>
+       <y>120</y>
+       <width>201</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtpassword">
+     <property name="geometry">
+      <rect>
+       <x>209</x>
+       <y>250</y>
+       <width>201</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>116</x>
+       <y>181</y>
+       <width>81</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>username</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>250</y>
+       <width>81</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>password</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtlogin">
+     <property name="geometry">
+      <rect>
+       <x>209</x>
+       <y>181</y>
+       <width>201</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAdd">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>360</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ajouter</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnModify">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>360</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modifier</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_id">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>605</x>
+      <y>31</y>
+      <width>541</width>
+      <height>491</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1261</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEtudiant">
+    <property name="title">
+     <string>Etudiant</string>
+    </property>
+    <addaction name="actiongestion_etudiant"/>
+   </widget>
+   <widget class="QMenu" name="menuUtilisateur">
+    <property name="title">
+     <string>Utilisateur</string>
+    </property>
+    <addaction name="actiongestion_utilisateur"/>
+   </widget>
+   <addaction name="menuEtudiant"/>
+   <addaction name="menuUtilisateur"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actiongestion_etudiant">
+   <property name="text">
+    <string>gestion etudiant</string>
+   </property>
+  </action>
+  <action name="actiongestion_utilisateur">
+   <property name="text">
+    <string>gestion utilisateur</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

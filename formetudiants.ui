@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormEtudiants</class>
+ <widget class="QMainWindow" name="FormEtudiants">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1261</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>30</y>
+      <width>561</width>
+      <height>451</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>19</y>
+      <width>641</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Quicksand</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Formulaire etudiant</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>22</x>
+       <y>41</y>
+       <width>67</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Matricule</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>22</x>
+       <y>92</y>
+       <width>59</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Prenom</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>22</x>
+       <y>141</y>
+       <width>37</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nom</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>191</y>
+       <width>41</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Email</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>240</y>
+       <width>77</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Téléphone</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>292</y>
+       <width>117</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date Naissance</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_matricule">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>41</y>
+       <width>171</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_prenom">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>90</y>
+       <width>171</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_nom">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>140</y>
+       <width>171</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_email">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>191</y>
+       <width>171</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_telephone">
+     <property name="geometry">
+      <rect>
+       <x>104</x>
+       <y>240</y>
+       <width>167</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_type">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>351</y>
+       <width>139</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>boursier</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>non boursier</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>boursier &amp; logé</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>351</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Type étudiant</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_bourse">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>410</y>
+       <width>141</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>20000</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>40000</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>411</y>
+       <width>52</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bourse</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="de_dateNaissance">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>292</y>
+       <width>121</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAjout">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>470</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ajouter</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>351</x>
+       <y>40</y>
+       <width>60</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Adresse</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_adresse">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>40</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>351</x>
+       <y>100</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>batiment</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_batiment">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>100</y>
+       <width>191</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>160</y>
+       <width>71</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Chambre</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_chambre">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>160</y>
+       <width>191</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnModify">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>470</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modifier</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnDelete">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>470</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Supprimer</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_id">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>230</y>
+       <width>167</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnReload">
+    <property name="geometry">
+     <rect>
+      <x>909</x>
+      <y>501</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rafraichir</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1261</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEtudiant">
+    <property name="title">
+     <string>Etudiant</string>
+    </property>
+    <addaction name="actiongestion_etudiant"/>
+   </widget>
+   <widget class="QMenu" name="menuUtilisateur">
+    <property name="title">
+     <string>Utilisateur</string>
+    </property>
+    <addaction name="actiongestion_utilisateur"/>
+   </widget>
+   <addaction name="menuEtudiant"/>
+   <addaction name="menuUtilisateur"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actiongestion_etudiant">
+   <property name="text">
+    <string>gestion etudiant</string>
+   </property>
+  </action>
+  <action name="actiongestion_utilisateur">
+   <property name="text">
+    <string>gestion utilisateur</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
